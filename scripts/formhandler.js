@@ -18,7 +18,13 @@
     console.log("Setting submit handler for form");
     this.$formElement.on("submit", function (event) {
       event.preventDefault();
-      var data = $(this).serializeArray();
+      var data = {
+        coffee: this.elements.coffee.value,
+        emailAddress: this.elements.emailAddress.value,
+        size: this.elements.size.value,
+        flavor: this.elements.flavor.value,
+        strength: this.elements.strength.value
+      };
       console.log(data);
       fn(data);
       this.reset();
