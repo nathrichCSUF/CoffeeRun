@@ -1,3 +1,6 @@
+//Nathaniel Richards
+//Assignmnet #3 Coffee Run
+//Due 9/24/19
 (function(window) {
   "use strict";
   var App = window.App || {};
@@ -7,11 +10,11 @@
     this.db = db;
   }
   Truck.prototype.createOrder = function(order) {
-    console.log("Adding order for " + order.email);
+    //console.log("Adding order for " + order.email);
     this.db.add(order.email, order);
   };
   Truck.prototype.deliverOrder = function(customerId) {
-    console.log("Delivering order for " + customerId);
+    //console.log("Delivering order for " + customerId);
     this.db.remove(customerId);
   };
   Truck.prototype.printOrders = function() {

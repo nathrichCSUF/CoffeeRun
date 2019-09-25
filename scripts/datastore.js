@@ -1,3 +1,6 @@
+//Nathaniel Richards
+//Assignmnet #3 Coffee Run
+//Due 9/24/19
 (function(window){
   "use strict";
   var App = window.App || {};
